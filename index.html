@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar.Fx | Guitar Tone Translation & Presets</title>
+    <!-- Favicon / Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -20,21 +22,34 @@
         }
 
         header {
-            padding: 30px 8%;
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #1a1a22;
         }
 
-        .logo {
-            font-size: 2rem;
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
             font-weight: 800;
             color: #ff9800;
             letter-spacing: 1px;
         }
 
-        .logo span {
+        .logo-text span {
             color: #ffffff;
         }
 
@@ -138,7 +153,10 @@
 <body>
 
     <header>
-        <div class="logo">Guitar<span>.Fx</span></div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Guitar.Fx Logo" class="logo-img">
+            <div class="logo-text">Guitar<span>.Fx</span></div>
+        </div>
         <div class="badge-status"><i class="fas fa-circle" style="font-size: 0.6rem; vertical-align: middle; margin-right: 5px;"></i> Sistema Activo</div>
     </header>
 
